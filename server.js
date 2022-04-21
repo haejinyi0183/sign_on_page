@@ -9,24 +9,26 @@ const app = express();
 
 app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
-const createUser = require('./registerUser');
+const user = require("./registerUser");
 
-mongoose.connect(uri, { useNewUrlParser:true, useUnifiedTopology:true })
+mongoose
+  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
   .then(() => {
     console.log("Connected to database ");
   })
-  .catch((err) => {
-    console.error('Error connecting to the database.');
+  .catch(() => {
+    console.error("Error connecting to the database.");
   });
 
+app.use("/", function (req, res, next) {
+  res.redirect("welcome.html");
+  next();
+});
 
-
-  app.post('/', createUser);
-
-
+app.post("/", user);
 
 app.listen(process.env.PORT, () => {
   console.log(`Listening on port ${process.env.PORT}`);
