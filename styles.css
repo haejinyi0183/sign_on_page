@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  align-items: center;
-  padding-top: 140px;
+  font-family: 'DM Serif Display', serif;  padding-top: 140px;
+  font-size: medium;
   padding-bottom: 40px;
   background-color: #78d2de;
 }
