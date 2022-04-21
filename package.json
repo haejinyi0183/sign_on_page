@@ -15,7 +15,8 @@
     "express": "^4.17.3",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.0",
-    "mongoose-bcrypt": "^1.9.0"
+    "mongoose-bcrypt": "^1.9.0",
+    "serve-favicon": "^2.5.0"
   },
   "keywords": [
     "example",
