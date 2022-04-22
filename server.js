@@ -12,7 +12,7 @@ app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const user = require("./registerUser");
+const user = require("./register_user");
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
