@@ -10,24 +10,24 @@ body {
   background-color: #78d2de;
 }
 
-.form-signin {
+.form-signin .welcome {
   width: 100%;
   max-width: 330px;
   padding: 15px;
   margin: auto;
 }
 
-.form-signin .form-floating:focus-within {
+.form-signin .welcome .form-floating:focus-within {
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
+.welcome .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 1;
   border-bottom-left-radius: 1;
 }
 
-.form-signin input[type="password"] {
+.welcome .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 1;
   border-top-right-radius: 1;
