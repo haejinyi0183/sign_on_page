@@ -1,11 +1,9 @@
 html {
-  position: relative;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  /* position: absolute; */
   font-family: 'DM Serif Display', serif;  padding-top: 140px;
   font-size: medium;
   padding-bottom: 40px;
@@ -34,3 +32,26 @@ body {
   border-top-left-radius: 1;
   border-top-right-radius: 1;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 555px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 555px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 555px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 555px),
+only screen and (                min-resolution: 192dpi) and (max-width: 555px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 555px) {  
+
+    .form-signin {
+      position: fixed;
+      right: 14%;
+      width: 100%;
+      padding: 15px;
+      margin: auto;
+    }
+
+    .image {
+      margin-top: 320px;
+      margin-bottom: -320px;
+    }
+
+  }
